@@ -8,6 +8,7 @@ import ViewSurvey from './pages/ViewSurvey/ViewSurvey'
 import Logout from './pages/LogOut/Logout';
 import Login from './pages/Login/Login'
 import Home from './pages/Home/Home';
+import FormFromJSON from '../FillForm/fillForm';
 
 
 function HomeScreen({ navigation }) {
@@ -38,6 +39,7 @@ export default function Dashboard() {
         <Drawer.Screen name="Notifications" component={NotificationsScreen} />
         <Drawer.Screen name="Form" component={Form} />
         <Drawer.Screen name="View Survey" component={ViewSurvey}/>
+        {/* <Drawer.Screen name="Fill Form" component={FormFromJSON}/> */}
         <Drawer.Screen name="Log Out" component={Logout}/>
         {/* <Drawer.Screen name="Login" component={Login}/> */}
       </Drawer.Navigator>

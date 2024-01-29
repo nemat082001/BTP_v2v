@@ -5,6 +5,7 @@ import Card from '../Components/Card'; // Import the Card component
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import Form from '../Form/Form'
 import Logout from '../LogOut/Logout'
+import FormFromJSON from '../FillForm/fillForm';
 
 
 
@@ -97,6 +98,7 @@ const ViewSurvey = () => {
         {/* <Drawer.Screen name="Home" component={Home}/> */}
         {/* <Drawer.Screen name="Notifications" component={NotificationsScreen} /> */}
         <Drawer.Screen name="Form" component={Form} />
+        {/* <Drawer.Screen name="FillForm" component={FormFromJSON} /> */}
         <Drawer.Screen name="Log Out" component={Logout}/>
         {/* <Drawer.Screen name="Login" component={Login}/> */}
       </Drawer.Navigator>
