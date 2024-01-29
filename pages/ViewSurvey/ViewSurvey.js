@@ -1,6 +1,7 @@
 // ViewPage.js
 import React, { useState, useEffect } from 'react';
 import { View, FlatList, StyleSheet } from 'react-native';
+import UserProfile from '../user_frofile/user_profile';
 import Card from '../Components/Card'; // Import the Card component
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import Form from '../Form/Form'
@@ -99,7 +100,9 @@ const ViewSurvey = () => {
         {/* <Drawer.Screen name="Notifications" component={NotificationsScreen} /> */}
         <Drawer.Screen name="Form" component={Form} />
         {/* <Drawer.Screen name="FillForm" component={FormFromJSON} /> */}
+        <Drawer.Screen name="UserProfile" component={UserProfile} />
         <Drawer.Screen name="Log Out" component={Logout}/>
+        
         {/* <Drawer.Screen name="Login" component={Login}/> */}
       </Drawer.Navigator>
   );

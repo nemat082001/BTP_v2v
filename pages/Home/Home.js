@@ -2,6 +2,7 @@
 import React from 'react';
 import { View, Text, Button, ImageBackground, StyleSheet } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import UserProfile from '../user_frofile/user_profile';
 
 const Home = () => {
     const navigation = useNavigation();
@@ -16,10 +17,10 @@ const Home = () => {
         with members from Africa, Asia, Canada, and Internationally. Our aim is to
         support small-scale fishers in their transition from vulnerability to viability.
       </Text>
-
       <Button title="Learn more" onPress={() => alert('Learn more button clicked')} />
       <Button title="ViewSurvey" onPress={() => navigation.navigate('ViewSurvey')} />
-
+      {/* <Button title='User Profile' onPress={()=> navigation.navigate('UserProfile')}/> */}
+      
     </View>
       <View style={styles.signupButtonContainer}>
         <Button title="Login" onPress={() => navigation.navigate('Login')} />
@@ -27,6 +28,7 @@ const Home = () => {
     </ImageBackground>
     </View>
   );
+  
 };
 
 const styles = StyleSheet.create({
